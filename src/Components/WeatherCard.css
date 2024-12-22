@@ -1,0 +1,72 @@
+/* WeatherCard.css */
+
+.weather-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  margin: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card.today {
+  background-color: #93c3c9; /* Bugün kartını farklı renkle vurgulama */
+  border: 2px solid #4fc3f7;
+}
+
+.day-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.temperature {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive tasarım */
+@media (max-width: 768px) {
+  .weather-card {
+    width: 120px; /* Küçük ekranlarda daha dar kart */
+    padding: 15px;
+  }
+
+  .day-name {
+    font-size: 16px; /* Küçük ekranlar için daha küçük yazı */
+  }
+
+  .temperature {
+    font-size: 18px; /* Küçük ekranlarda daha küçük sıcaklık değeri */
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-card {
+    width: 100px; /* Daha küçük ekranlar için daha küçük kart */
+    padding: 10px;
+  }
+
+  .day-name {
+    font-size: 14px;
+  }
+
+  .temperature {
+    font-size: 16px;
+  }
+}
